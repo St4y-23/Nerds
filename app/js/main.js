@@ -7,6 +7,42 @@ $(function(){
     slidesToScroll: 1,
   });
 
+ 
+  $('.icon-circle-o').on('click', function(){
+    $(this).toggleClass('icon-eercast');
+  });
+
+
+  $('.icon-check-square-o').on('click', function(){
+    $(this).toggleClass('icon-square-o');
+  });
+
+
+  $('.sort-price').on('click', function(){
+    $(".sort-price").addClass('active');
+    $('.sort-type').removeClass('active');
+    $('.sort-name').removeClass('active');
+  });
+  $('.sort-type').on('click', function(){
+    $(".sort-type").addClass('active');
+    $('.sort-price').removeClass('active');
+    $('.sort-name').removeClass('active');
+  });
+  $('.sort-name').on('click', function(){
+    $(".sort-name").addClass('active');
+    $('.sort-type').removeClass('active');
+    $('.sort-price').removeClass('active');
+  });
+  
+  
+  $('.icon-caret-down').on('click', function(){
+    $(".icon-caret-down").addClass('active');
+    $('.icon-caret-up').removeClass('active');
+  });
+  $('.icon-caret-up').on('click', function(){
+    $(".icon-caret-up").addClass('active');
+    $('.icon-caret-down').removeClass('active');
+  });
 
   
 });
