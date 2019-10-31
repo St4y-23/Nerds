@@ -370,6 +370,19 @@
     top: 3px;
     left: 0;
   }
+  .grid-adaptive:before,
+  .grid-fix:before,
+  .grid-rubber:before{
+    position: absolute;
+    content: "\f10c";
+    font-family: 'icomoon';
+  }
+  li.active:before{
+    content: "\f2da";
+    position: absolute;
+    font-family: 'icomoon';
+    left: -2px;
+  }
 }
 .catalog__aside-features__title{
   margin-bottom: 25px;

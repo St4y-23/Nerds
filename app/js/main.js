@@ -8,8 +8,20 @@ $(function(){
   });
 
  
-  $('.icon-circle-o').on('click', function(){
-    $(this).toggleClass('icon-eercast');
+  $('.grid-adaptive').on('click', function(){
+    $(".grid-adaptive").addClass('active');
+    $('.grid-fix').removeClass('active');
+    $('.grid-rubber').removeClass('active');
+  });
+  $('.grid-fix').on('click', function(){
+    $(".grid-fix").addClass('active');
+    $('.grid-adaptive').removeClass('active');
+    $('.grid-rubber').removeClass('active');
+  });
+  $('.grid-rubber').on('click', function(){
+    $(".grid-rubber").addClass('active');
+    $('.grid-fix').removeClass('active');
+    $('.grid-adaptive').removeClass('active');
   });
 
 
