@@ -7,7 +7,7 @@ $(function(){
     slidesToScroll: 1,
   });
 
- 
+//  Сетка
   $('.grid-adaptive').on('click', function(){
     $(".grid-adaptive").addClass('active');
     $('.grid-fix').removeClass('active');
@@ -24,12 +24,12 @@ $(function(){
     $('.grid-adaptive').removeClass('active');
   });
 
-
+// Особенности
   $('.icon-check-square-o').on('click', function(){
     $(this).toggleClass('icon-square-o');
   });
 
-
+// Сортировка
   $('.sort-price').on('click', function(){
     $(".sort-price").addClass('active');
     $('.sort-type').removeClass('active');
@@ -46,7 +46,7 @@ $(function(){
     $('.sort-price').removeClass('active');
   });
   
-  
+  // Сортировка стрелками
   $('.icon-caret-down').on('click', function(){
     $(".icon-caret-down").addClass('active');
     $('.icon-caret-up').removeClass('active');
