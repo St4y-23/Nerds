@@ -1,5 +1,19 @@
 $(function () {
 
+  $('.header__btn').on('click', function () {
+    $('.header__menu').slideToggle();
+    $('.header__basket').slideToggle();
+  });
+
+  $('.catalog__aside-button').on('click', function () {
+    $('.catalog__aside').slideToggle();
+  });
+
+
+  $('.header__basket').on('click', function () {
+    $('.header__basket-a').toggleClass('active');
+  });
+
   $(".slider__wrapper").slick({
     dots: true,
     arrows: false,
@@ -100,5 +114,11 @@ $(function () {
     $(".polzunok-input-5-right").val(input_right);
     $(".polzunok-5").slider("values", [input_left, input_right]);
   });
+
+  // PAGINATION
+
+
+
+
 
 });

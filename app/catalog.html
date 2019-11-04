@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -16,16 +17,26 @@
       <header class="header">
         <div class="container">
           <div class="header__inner">
-            <div class="header__logo"><a href="#"><img src="img/nerds-logo.png" alt=""></a></div>
+            <div class="header__logo"><a href="index.html"><img src="img/nerds-logo.png" alt=""></a></div>
+            <div class="header__btn">
+              <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80"
+                onclick="this.classList.toggle('active')">
+                <path class="line top"
+                  d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom"
+                  d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+              </svg>
+            </div>
             <div class="header__menu">
-              <ul>
+              <ul class="header__menu-list">
                 <li><a href="#">студия</a></li>
                 <li><a href="#">клиенты</a></li>
-                <li><a href="#">магазин</a></li>
+                <li><a class="active" href="#">магазин</a></li>
                 <li><a href="#">контакты</a></li>
               </ul>
             </div>
-            <div class="header__basket"><a href="#">корзина</a></div>
+            <div class="header__basket"><a class="header__basket-a" href="#">корзина</a></div>
           </div>
         </div>
       </header>
@@ -42,6 +53,7 @@
       <!-- CATALOG -->
       <section class="catalog">
         <div class="container">
+          <div class="catalog__aside-button">Стоимость</div>
           <div class="catalog__wrapper">
             <div class="catalog__aside">
               <div class="catalog__aside__inner">
@@ -49,7 +61,7 @@
                 <div class="catalog__aside-range">
                   <div class="polzunok-container-5">
                     <div class="polzunok-5__inner">
-                        <div class="polzunok-5"></div>
+                      <div class="polzunok-5"></div>
                     </div>
                     <label>от
                       <input type="text" id="before" class="polzunok-input-5-left" />
@@ -129,8 +141,9 @@
                   </div>
                   <div class="catalog__products-item__img"><img src="img/catalog-2.jpg" alt=""></div>
                   <div class="catalog__products-item__info">
-                    <div class="item__info-title title">Sedona</div>
-                    <div class="item__info-text">Информационный сайт для туристов</div>
+                    <div class="item__info-title title">Pink App</div>
+                    <div class="item__info-text">Продуктовый лендинг
+                      приложения для iOS и Android</div>
                     <div class="item__info-btn btn-red"><a href="#">9 900 руб.</a></div>
                   </div>
                 </div>
@@ -145,8 +158,8 @@
                   </div>
                   <div class="catalog__products-item__img"><img src="img/catalog-3.jpg" alt=""></div>
                   <div class="catalog__products-item__info">
-                    <div class="item__info-title title">Sedona</div>
-                    <div class="item__info-text">Информационный сайт для туристов</div>
+                    <div class="item__info-title title">Barbershop</div>
+                    <div class="item__info-text">Сайт салона красоты. Для мужчин, да.</div>
                     <div class="item__info-btn btn-red"><a href="#">9 900 руб.</a></div>
                   </div>
                 </div>
@@ -161,8 +174,8 @@
                   </div>
                   <div class="catalog__products-item__img"><img src="img/catalog-4.jpg" alt=""></div>
                   <div class="catalog__products-item__info">
-                    <div class="item__info-title title">Sedona</div>
-                    <div class="item__info-text">Информационный сайт для туристов</div>
+                    <div class="item__info-title title">MISHKA</div>
+                    <div class="item__info-text">Интернет-магазин вязаных игрушек</div>
                     <div class="item__info-btn btn-red"><a href="#">9 900 руб.</a></div>
                   </div>
                 </div>
@@ -177,8 +190,8 @@
                   </div>
                   <div class="catalog__products-item__img"><img src="img/catalog-5.jpg" alt=""></div>
                   <div class="catalog__products-item__info">
-                    <div class="item__info-title title">Sedona</div>
-                    <div class="item__info-text">Информационный сайт для туристов</div>
+                    <div class="item__info-title title">A Plus</div>
+                    <div class="item__info-text">Лендинг курсов повышения квалификации</div>
                     <div class="item__info-btn btn-red"><a href="#">9 900 руб.</a></div>
                   </div>
                 </div>
@@ -193,13 +206,24 @@
                   </div>
                   <div class="catalog__products-item__img"><img src="img/catalog-6.jpg" alt=""></div>
                   <div class="catalog__products-item__info">
-                    <div class="item__info-title title">Sedona</div>
-                    <div class="item__info-text">Информационный сайт для туристов</div>
+                    <div class="item__info-title title">КВАСТ</div>
+                    <div class="item__info-text">Промо-сайт производителя крафтового кваса</div>
                     <div class="item__info-btn btn-red"><a href="#">9 900 руб.</a></div>
                   </div>
                 </div>
 
               </div>
+
+              <div class="pagination">
+                <ul class="pagination__list">
+                  <li><span class="active">1</span></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a class="pag-next" href="#">СЛЕДУЮЩАЯ</a></li>
+                </ul>
+              </div>
+
             </div>
           </div>
         </div>
@@ -248,9 +272,35 @@
     </footer>
   </div>
 
-  <div id="modal">
-    123456
+
+  <div style="display: none;" id="modal">
+    <div class="modal__inner">
+      <div class="modal__title">Напишите нам</div>
+      <div class="modal__form">
+        <form>
+          <div class="modal__form-wrapper">
+            <div class="modal__form-name">
+              <div class="modal__form-text">Ваше имя:</div>
+              <input type="text" placeholder="Имя Фамилия" required>
+            </div>
+            <div class="modal__form-name">
+              <div class="modal__form-text">Ваш e-mail:</div>
+              <input type="text" placeholder="email@example.com" required>
+            </div>
+          </div>
+          <div class="modal__form-textarea">
+            <div class="modal__form-text">Текст письма:</div>
+            <textarea placeholder="В свободной форме"></textarea>
+          </div>
+          <button class="btn-popup">ОТПРАВИТЬ</button>
+        </form>
+      </div>
+    </div>
   </div>
+
+
+
+
 
 
 

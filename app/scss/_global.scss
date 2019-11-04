@@ -60,8 +60,11 @@ body{
 		background-color: $red;
 		border-radius: 5px;
 		text-transform: uppercase;
+		transition: all .3s;
+		&:hover{
+			background-color: #e74246;
+		}
 	}
-  
 }
 .btn-green{
 	a{
@@ -70,8 +73,11 @@ body{
 		background-color: $green;
 		border-radius: 5px;
 		text-transform: uppercase;
+		transition: all .3s;
+		&:hover{
+			background-color: #00bc6c;
+		}
 	}
-  
 }
 .btn-yellow{
 	a{
@@ -80,6 +86,10 @@ body{
 		background-color: $yellow;
 		border-radius: 5px;
 		text-transform: uppercase;
+		transition: all .3s;
+		&:hover{
+			background-color: #eab534;
+		}
 	}
 }
 .btn-grey{
@@ -89,6 +99,10 @@ body{
 		background-color: #eeeeee;
 		border-radius: 5px;
 		text-transform: uppercase;
+		transition: all .3s;
+		&:hover{
+			background-color: #dfdfdf;
+		}
 	}
 }
 .title{
